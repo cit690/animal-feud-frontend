@@ -5,7 +5,7 @@ function PostCard({post}) {
   console.log('post', post)
   return(
     <div className="card">
-      <p>{post.owner.name}</p>
+      <h4>{post.owner.name}</h4>
     <Link to="/thread">
       <h2>{post.content}</h2>
     </Link>
