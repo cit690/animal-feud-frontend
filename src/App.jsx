@@ -35,7 +35,7 @@ useEffect (() => {
   const handleDeletePost = id => {
     
     postService.deleteOne(id)
-    .then(deletedPost => setPosts(posts.filter(post => post._id !== id)))
+    .then(setPosts(posts.filter(post => post._id !== id)))
   }
 
   const handleLogout = () => {
