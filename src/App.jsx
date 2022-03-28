@@ -49,6 +49,10 @@ useEffect (() => {
     setUser(authService.getUser())
   }
 
+  const handleGetThread = id => {
+    postService.getThread(id)
+  }
+
   return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
@@ -66,7 +70,7 @@ useEffect (() => {
             path='/thread'
             element={
               <PostThread 
-                
+                handleGetThread={handleGetThread}
               />
             }
         />
