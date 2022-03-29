@@ -21,6 +21,7 @@ return(<>
     <h4>{postThread.owner.name}</h4>
     <h2> {postThread.content} </h2>
     <footer>{postThread.createdAt}</footer>
+    
   </div>
 </>)
 }
